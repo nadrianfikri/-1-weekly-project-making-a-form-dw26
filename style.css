@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+/* body {
+  background-color: #191222;
+} */
+
+/* data-output */
+main {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh;
+  gap: 10px;
+}
+.link {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  transition: 0.3s;
+}
+.link img {
+  width: 20px;
+}
+.hide-el {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+}
+.hidden-text {
+  color: #eee;
+}
+.hidden-text:hover {
+  color: black;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+#data-output {
+  flex-basis: 40%;
+  justify-content: center;
+  align-items: flex-start;
+}
+#data-output {
+  padding: 0px 40px;
+}
+#data-output header,
+h1,
+p {
+  margin: 20px 0;
+}
+#data-output header h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: viga, helvetica;
+}
+#data-output header p {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+#data-output section {
+  display: flex;
+}
+#data-output section img {
+  width: 30px;
+  height: 30px;
+  transform: translateY(10px);
+}
+#data-output section p {
+  font-size: 1rem;
+  padding-left: 20px;
+  transform: translateY(-5px);
+}
+
+#data-output .data-desc {
+  margin: 10px 0;
+}
+
+/* data input form */
+#data-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 60%;
+  background-image: url(https://cdna.artstation.com/p/assets/images/images/004/604/080/large/paisoe-zayyar-10.jpg?1484912022);
+  background-position: center;
+  background-size: cover;
+}
+
+.card {
+  width: 65%;
+  height: auto;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+
+  padding: 1em 4em;
+  border-radius: 5px;
+  box-shadow: inset 2px 5px 10px 2px white, 2px 2px 10px black;
+  backdrop-filter: blur(10px);
+}
+form .text-title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+form input,
+textarea {
+  font-family: monospace;
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid purple;
+
+  margin-top: 5px;
+}
+form input,
+textarea:focus {
+  outline: none;
+}
+form label {
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+form .gender {
+  width: auto;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+.submit-btn {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+
+  margin: 0 auto;
+  padding: 10px 40px;
+  width: 50%;
+
+  background: white;
+  border: 1px solid purple;
+  border-radius: 20px;
+  cursor: pointer;
+  transform: translateX(50%);
+  transition: 0.3s;
+}
+.submit-btn:hover {
+  color: white;
+  background-color: purple;
+}
+.submit-btn:active {
+  color: white;
+  background-color: rgb(53, 45, 44);
+}
+
+/* Remove arrow in inputNumber */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* media query */
+@media screen and (max-width: 992px) {
+  #data-output header h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
+  }
+  #data-output {
+    text-align: center;
+    /* width: 100%; */
+  }
+  #data-output header {
+    margin: 20px auto;
+  }
+  #data-output header h1 {
+    font-size: 2rem;
+  }
+  #data-output article {
+    text-align: left;
+  }
+
+  #data-input {
+    height: 100vh;
+  }
+
+  .container {
+    padding: 20px;
+  }
+  .card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .submit-btn {
+    width: 100%;
+    transform: none;
+  }
+}

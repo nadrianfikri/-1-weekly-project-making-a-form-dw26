@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>#1 Weekly Project | Personal Data Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <div id="data-input" class="container">
+        <form action="#" method="POST" class="card" id="form">
+          <h2 class="text-title">Input Your Data</h2>
+          <br />
+          <label for="name">Name: </label> <br />
+          <input type="text" id="name-input" name="name" placeholder="Enter your name" required />
+          <br /><br />
+          <label for="summary">Summary: </label> <br />
+          <input type="text" id="summary-input" name="summary" placeholder="Enter your summary" required />
+          <br /><br />
+          <label for="gender">Gender: </label> <br />
+          <input type="radio" id="isMale" name="gender" class="gender" value="Male" checked /> Male <input type="radio" id="isFemale" name="gender" class="gender" value="female" /> Female <br /><br />
+          <label for="phone">Phone: </label> <br />
+          <input type="number" id="phone-input" name="phone" maxlength="13" placeholder="123445677890" required />
+          <br /><br />
+          <label for="email">Email: </label> <br />
+          <input type="email" id="email-input" name="email" placeholder="youremail@gmail.com" required />
+          <br /><br />
+          <label for="address">Address: </label> <br />
+          <textarea id="address-input" name="address" cols="50" rows="7" placeholder="Enter your address" required></textarea>
+          <br /><br />
+
+          <input type="submit" value="Submit" class="submit-btn" />
+        </form>
+      </div>
+      <div id="data-output" class="container">
+        <header>
+          <h1 id="data-name">Ahmad Alfikri Nadrian</h1>
+          <p id="data-summary">
+            I'm a person who switched careers from land surveyor to become a developer as a form of adaptation to face an abnormal situation such as a pandemic. Since 2021 I developed myself by learning a lot about web development. I
+            learned by taking courses, watching youtube videos, and joining a full stack developer bootcamp.
+          </p>
+        </header>
+        <article>
+          <section id="gender" class="data-desc">
+            <img src="https://img.icons8.com/doodle/48/000000/gender-neutral-user.png" alt="gender" />
+            <p id="data-gender">Male</p>
+          </section>
+          <section id="phone">
+            <img src="https://img.icons8.com/doodle/48/000000/whatsapp.png" alt="phone" />
+            <p id="data-phone">085156810221</p>
+          </section>
+          <section id="email" class="data-desc">
+            <img src="https://img.icons8.com/doodle/96/000000/gmail-new.png" alt="email" />
+            <p id="data-email">ahmad.alfikri.n91@gmail.com</p>
+          </section>
+          <section id="address" class="data-desc">
+            <img src="https://img.icons8.com/doodle/48/000000/home--v1.png" alt="address" />
+            <p id="data-address">Jl. K.H. Abdul Hamid Cisauk RT 02 RW 05, Desa Sukamaju, Kec. Cibungbulang, Kab. Bogor, Jawa Barat 16630</p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
