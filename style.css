@@ -6,9 +6,6 @@
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
 }
-/* body {
-  background-color: #191222;
-} */
 
 /* data-output */
 main {
@@ -18,28 +15,6 @@ main {
   height: 100vh;
   gap: 10px;
 }
-.link {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  transition: 0.3s;
-}
-.link img {
-  width: 20px;
-}
-.hide-el {
-  position: absolute;
-  top: 0px;
-  left: 50px;
-}
-.hidden-text {
-  color: #eee;
-}
-.hidden-text:hover {
-  color: black;
-  background-color: white;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -189,7 +164,7 @@ input[type='number'] {
   }
   #data-output {
     text-align: center;
-    /* width: 100%; */
+   
   }
   #data-output header {
     margin: 20px auto;
