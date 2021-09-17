@@ -25,6 +25,6 @@ function submitData() {
 }
 
 form.addEventListener('submit', function (e) {
-  e.preventDefault(); //untuk menghilangkan sifat asli browser
+  e.preventDefault(); //untuk mencegah sifat asli browser (reload)
   submitData();
 });

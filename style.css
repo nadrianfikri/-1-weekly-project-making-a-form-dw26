@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
+
 }
 
 /* data-output */
@@ -23,6 +24,7 @@ main {
   flex-basis: 40%;
   justify-content: center;
   align-items: flex-start;
+  transition: 0.5s;
 }
 #data-output {
   padding: 0px 40px;
@@ -31,6 +33,7 @@ main {
 h1,
 p {
   margin: 20px 0;
+  transition: 0.5s;
 }
 #data-output header h1 {
   text-transform: uppercase;
@@ -48,7 +51,7 @@ p {
 #data-output section img {
   width: 30px;
   height: 30px;
-  transform: translateY(10px);
+  transform: translateY(7px);
 }
 #data-output section p {
   font-size: 1rem;
