@@ -21,7 +21,7 @@ function submitData() {
   address.innerText = document.getElementById('address-input').value;
 
   //   pengecekan untuk menentukan gender yg akan ditampilkan
-  return isMale.checked ? (gender.innerText = 'Male') : (gender.innerText = 'Female');
+  isMale.checked ? (gender.innerText = 'Male') : (gender.innerText = 'Female');
 }
 
 form.addEventListener('submit', function (e) {
