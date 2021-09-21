@@ -20,7 +20,7 @@ function submitData() {
   email.innerText = document.getElementById('email-input').value;
   address.innerText = document.getElementById('address-input').value;
 
-  //   pengecekan untuk menentukan gender yg akan ditampilkan
+  //   pengecekan untuk menentukan gender yg akan ditampilkan di output
   isMale.checked ? (gender.innerText = 'Male') : (gender.innerText = 'Female');
 }
 
